@@ -1,35 +1,32 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { useMediaQuery } from "react-responsive";
 import Color from "./Color";
 import exportAsImage from "../utils/exportAsImage";
 
 export default function Palette({ palette, arePaintingsVisible }) {
+	const favoriteKey = useMemo(() => palette.id.toString(), [palette.id]);
+
 	useEffect(() => {
-		const favoriteKey = palette.id.toString();
 		const favorite = JSON.parse(localStorage.getItem(favoriteKey));
 		if (favorite !== null) {
 			setFavorite(favorite);
 			palette.favorite = favorite;
 		}
-	}, [palette.id]);
-
-	const exportRef = useRef();
-
-	const [isInfoVisible, toggleInfo] = useState(false);
-
-	const handleInfoClick = () => {
-		toggleInfo((prevState) => !prevState);
-	};
+	}, [favoriteKey]);
 
 	const [isFavorite, setFavorite] = useState(false);
 
 	const handleFavoriteClick = () => {
 		setFavorite((prevState) => !prevState);
-		const favoriteKey = palette.id.toString();
 		palette.favorite = !palette.favorite;
 		localStorage.setItem(favoriteKey, JSON.stringify(palette.favorite));
 	};
+	const exportRef = useRef();
 
+	const [isInfoVisible, toggleInfo] = useState(false);
+	const handleInfoClick = () => {
+		toggleInfo((prevState) => !prevState);
+	};
 	const isTabletOrMobile = useMediaQuery({
 		query: "(max-width: 1200px)",
 	});
