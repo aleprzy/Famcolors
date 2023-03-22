@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import ColorFilter from "./ColorFilter";
 import { ColumnContext } from "../contexts/ColumnContext";
 import { PaintingsVisibilityContext } from "../contexts/PaintingsVisibilityContext";
