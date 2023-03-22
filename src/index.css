@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--light-grey: #b8b8b8;
+	--medium-grey: #a6a6a6;
+	--dark-grey: #2e2e2e;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: auto;
+	max-width: 2000px;
+	font-family: "Fredoka", sans-serif;
+	font-weight: 500;
+}
