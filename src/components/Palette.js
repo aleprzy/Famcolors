@@ -11,11 +11,12 @@ export default function Palette({ palette, arePaintingsVisible }) {
 			setFavorite(favorite);
 			palette.favorite = favorite;
 		}
-	}, []);
+	}, [palette.id]);
 
 	const exportRef = useRef();
 
 	const [isInfoVisible, toggleInfo] = useState(false);
+
 	const handleInfoClick = () => {
 		toggleInfo((prevState) => !prevState);
 	};
