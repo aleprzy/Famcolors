@@ -1,6 +1,6 @@
 # Famcolors
 
-[Famcolors]() is an application-tool dedicated for artists and designers, which is a collection of color palettes inspired by classic paintings.
+[Famcolors]() - application-tool dedicated to artists and designers - is a collection of color palettes inspired by classic paintings.
 
 ## Main functionalities:
 
@@ -10,6 +10,11 @@
 4. Searching for palettes by painting title or/and author
 5. Filtering palettes by colors
 6. Hiding/showing paintings
+
+## Roadmap
+
+[ ] improving the method of filtering by color
+[ ] optimizing localStorage
 
 ## Built using:
 
