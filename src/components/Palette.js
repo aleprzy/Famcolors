@@ -12,7 +12,7 @@ export default function Palette({ palette, arePaintingsVisible }) {
 			setFavorite(favorite);
 			palette.favorite = favorite;
 		}
-	});
+	}, [favoriteKey, palette]);
 
 	const [isFavorite, setFavorite] = useState(false);
 
