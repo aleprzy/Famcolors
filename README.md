@@ -15,6 +15,7 @@
 
 - [ ] improving the method of filtering by color
 - [ ] optimizing localStorage
+- [ ] search input disappear when scrolling
 
 ## Built using:
 

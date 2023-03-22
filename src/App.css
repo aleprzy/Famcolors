@@ -354,7 +354,7 @@ button {
 	.main__top-bar {
 		top: -2rem;
 		height: 10rem;
-		padding: 0 5rem 2rem;
+		padding: 0 7rem 2rem;
 		align-items: flex-end;
 	}
 
@@ -364,7 +364,7 @@ button {
 
 	.main__favorites-title {
 		height: 10rem;
-		padding: 3rem 5rem 2rem;
+		padding: 3rem 7rem 2rem;
 	}
 
 	.main__palettes-container {
@@ -379,8 +379,8 @@ button {
 	}
 
 	.grid-view--1 {
-		row-gap: 2rem;
-		padding: 2rem 5rem;
+		row-gap: 3rem;
+		padding: 2rem 7rem;
 	}
 
 	.navbar {
