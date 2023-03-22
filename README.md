@@ -13,8 +13,8 @@
 
 ## Roadmap
 
-[ ] improving the method of filtering by color
-[ ] optimizing localStorage
+- [ ] improving the method of filtering by color
+- [ ] optimizing localStorage
 
 ## Built using:
 
